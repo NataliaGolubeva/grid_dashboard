@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("../icomoon/style.css");
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  height: 50px;
+  display: flex;
+}
+nav .nav-left {
+  margin-right: auto;
+  padding-top: 15px;
+}
+nav .nav-left a {
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+  text-align: center;
+}
+nav .nav-right {
+  display: flex;
+}
+nav .nav-right .nav-img {
+  height: auto;
+  width: 40px;
+  margin-top: 5px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+nav .nav-right .bi-gear {
+  color: black;
+  font-size: 20px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.grid-container-main {
+  background-color: #bebfc5;
+  display: grid;
+  grid-template-areas: "section section section sidebar" "table table table sidebar";
+  grid-gap: 10px;
+  padding: 10px;
+  grid-template-columns: 27% 27% 27% auto;
+  grid-template-rows: 42% auto;
+}
+
+aside {
+  background-color: white;
+  grid-area: sidebar;
+}
+
+section {
+  background-color: white;
+  grid-area: section;
+}
+
+.table {
+  background-color: white;
+  grid-area: table;
+}
+
+.grid-container-secondary {
+  background-color: #bebfc5;
+  display: grid;
+  grid-template-areas: "section1 section2";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+}
+
+.section1 {
+  grid-area: section1;
+  background-color: #bebfc5;
+}
+
+.section2 {
+  grid-area: section2;
+  margin-bottom: 5px;
+}
+
+.grid-container-list {
+  background-color: #bebfc5;
+  display: grid;
+  padding-right: 20px;
+  margin-right: 10px;
+  grid-template-areas: "item1 item2 item3" "item4 item5 item6" "item7 item8 item9";
+  grid-gap: 10px;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: auto auto auto;
+}
+
+.grid-card {
+  background-color: white;
+  display: grid;
+  grid-template-areas: "card-img card-body";
+  grid-template-columns: 30% 70%;
+  margin-bottom: -5px;
+}
+
+.card-img {
+  grid-area: card-img;
+  margin: 5px;
+}
+.card-img img {
+  width: 60px;
+  height: 60px;
+}
+
+.card-body {
+  grid-area: card-body;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.card-body .card-description h5 {
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+.card-body .card-description p {
+  line-height: 20px;
+}
+.card-body .card-stars {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.card-body .card-stars .icon-star {
+  color: gold;
+}
+
+.grid-profile {
+  background-color: white;
+  display: grid;
+  grid-template-areas: "profile-photo profile-form";
+  grid-template-columns: 35% 65%;
+  margin-bottom: 30px;
+}
+
+.profile-photo {
+  grid-area: profile-photo;
+}
+.profile-photo img {
+  height: 250px;
+  width: auto;
+  padding-top: 20px;
+}
+
+.profile-form {
+  grid-area: profile-form;
+  margin-top: 20px;
+}
+.profile-form .button {
+  padding: 12px 65px;
+  background-color: lightgray;
+  font-size: 10px;
+  margin-bottom: 50px;
+}
+.profile-form .form-control-form {
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.profile-form .container-radio {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.profile-form .container-radio .radio {
+  font-size: 1rem;
+}
+
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+
+  .navbar .nav-item:hover .nav-link {
+    color: #000;
+  }
+
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
+aside .navbar-aside {
+  margin-bottom: 5px;
+}
+aside .navbar-aside ul {
+  display: inline-block;
+  margin: 10px;
+  line-height: 25px;
+}
+aside .navbar-aside ul li {
+  font-size: 20px;
+}
+aside .navbar-aside ul li a {
+  text-decoration: none;
+  color: black;
+  padding-right: 70px;
+}
+aside .navbar-aside ul li a:hover {
+  background-color: lightgrey;
+}
+aside .table-aside table {
+  width: 100%;
+}
+aside .table-aside table tr {
+  border: 1px solid lightgrey;
+}
+aside .table-aside table tr:hover {
+  background-color: #f0ecec;
+}
+aside .table-aside table tr td {
+  vertical-align: middle;
+  height: 80px;
+}
+aside .table-aside table tr td img {
+  border-radius: 50%;
+}
+
+.main-table {
+  width: 100%;
+  height: 100%;
+}
+.main-table thead tr {
+  height: 40px;
+}
+.main-table thead tr th {
+  vertical-align: middle;
+  border-bottom: 2px solid #4c8ae7;
+}
+.main-table tbody tr {
+  border: 1px solid lightgrey;
+}
+.main-table tbody tr:hover {
+  background-color: #f0ecec;
+}
+.main-table tbody tr td {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=style.css.map */
